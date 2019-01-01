@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 	/*
 
@@ -101,7 +101,7 @@
 						// Print results based on error code
 						switch($err){
 							case 0:
-								echo '<span id="txt" style="color: #424242;">File protected successfully!<br><a href="' . $_UP['result'] . $up_name.'" target="_blank">DOWNLOAD</a><br><a href="index.php">PROTECT ANOTHER FILE</a><br><br><i>All files are deleted within 30 minutes.</i></span>';
+								echo '<span id="txt" style="color: #424242;">File protected successfully!<br><a href="' . $_UP['result'] . $up_name.'" target="_blank">DOWNLOAD</a><br><a href="index.php">PROTECT ANOTHER FILE</a><br><br><i>All files are deleted within 1 hour.</i></span>';
 								break;
 							case 1:
 								echo '<span id="txt" style="color: #424242;">Only .py files are allowed!<br><a href="index.php">TRY AGAIN</a></span>';
