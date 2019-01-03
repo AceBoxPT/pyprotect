@@ -19,7 +19,7 @@ We use simple Base64 encoding and some string manipulations to obfuscate the fil
 * `upload` - Same as _result_ folder, but stores the user uploaded files instead.
 * `.htaccess` - Apache server settings (friendly URLs and error handles).
 * `autocron.php` - Cron job file, ran every hour by the server. Deletes all the files uploaded and temporarily stored at _result_ and _upload_ folders.
-* `bg.png`, `favicon.ico`, `loading.gif`, `main.css` - Website assets as images and stylesheet. Do not matter.
+* `bg.png`, `favicon.ico`, `loading.gif`, `main.css`, `ogicon.png` - Website assets as images and stylesheet. Do not matter.
 * `error.php` - A very basic unexpected error page. Aesthetics only.
 * `index.php` - Main website page, with the form which selects the file.
 * **`process.php`** - **The real deal here**. This is the script which uploads, obfuscates and processes the files.
