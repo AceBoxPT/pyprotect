@@ -1,4 +1,4 @@
-﻿<!--
+<!--
 
 	pyprotect - by Gabriel Silva
 	Version 0.1alpha
@@ -10,9 +10,32 @@
 
 <html>
 	<head>
-		<title>pyprotect</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- Tags -->
 		<meta name="robots" content="index,follow">
+		<meta charset="utf-8">
+		<meta name="language" content="en">
+		<meta http-equiv="content-language" content="en">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="author" content="Gabriel Silva">
+		<meta name="reply-to" content="contato@gabrielsilva.tk">
+		<meta name="rating" content="general">
+		<meta name="application-name" content="pyprotect">
+		<meta name="description" content="This is a simple online tool to obfuscate python codes and &quot;hide&quot; their sources.">
+		<meta name="abstract" content="Online python code obfuscator.">
+		<meta name="keywords" content="pyprotect, python, obfuscate, obfuscator, crypt, encrypt, encode, pyobfuscate, tk, hide, source, secure, code, py, protect">
+		<meta property="og:site_name" content="pyprotect">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://gabrielsilva.tk/pyprotect">
+		<meta property="og:title" content="pyprotect">
+		<meta property="og:image" content="http://gabrielsilva.tk/pyprotect/ogicon.png">
+		<meta property="og:image:type" content="image/png">
+		<meta property="og:image:width" content="256">
+		<meta property="og:image:height" content="256">
+		<meta property="og:locale" content="pt_BR">
+		<link rel="canonical" href="http://gabrielsilva.tk/pyprotect">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    
+		<title>pyprotect</title>
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" href="main.css">
 		<script type="text/javascript">
