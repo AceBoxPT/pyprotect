@@ -10,6 +10,17 @@
 
 	*/
 
+	// 0. START
+
+	// Defines the output type
+	header("Content-Type: text/plain; charset=utf-8");
+
+	// Stores the number of files
+	$count = 0;
+
+	// Stores current time
+	$date = date('d/m/Y H:i:s');
+
 	// 1. RESULT FOLDER
 
 	// Specifies the folder to delete files
@@ -17,6 +28,9 @@
 
 	// Get all the files from folder
 	$files = glob($folder . '/*');
+
+	// Adds the number of files
+	$count += count($files);
 
 	// Loop through each file
 	foreach($files as $file){
@@ -38,6 +52,9 @@
 	// Get all the files from folder
 	$files = glob($folder . '/*');
 
+	// Adds the number of files
+	$count += count($files);
+
 	// Loop through each file
 	foreach($files as $file){
 	    // Exclude index file
@@ -49,4 +66,9 @@
 	    	}
 	    }
 	}
+
+	// 3. END
+
+	// Prints the result log
+	print ($count - 2) . ' files deleted at ' . $date . ' UTC.';
 ?>
