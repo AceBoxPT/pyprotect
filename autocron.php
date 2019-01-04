@@ -10,7 +10,10 @@
 
 	*/
 
-	// 0. START
+	// 1. PREPARATION
+
+	// Changes the working folder
+	chdir('public_html/pyprotect');
 
 	// Defines the output type
 	header("Content-Type: text/plain; charset=utf-8");
@@ -21,54 +24,50 @@
 	// Stores current time
 	$date = date('d/m/Y H:i:s');
 
-	// 1. RESULT FOLDER
+	// 2. RESULT FOLDER
 
 	// Specifies the folder to delete files
 	$folder = 'result';
 
-	// Get all the files from folder
-	$files = glob($folder . '/*');
+	// Get all the python files from folder
+	$files = glob($folder . '/*.py');
 
 	// Adds the number of files
 	$count += count($files);
 
 	// Loop through each file
 	foreach($files as $file){
-	    // Exclude index file
-	    if(basename($file) != 'index.php'){
-	    	// Check if file is valid
-	    	if(is_file($file)){
-	    		// Delete file
-	        	unlink($file);
-	    	}
-	    }
+    	// Check if file is valid
+    	if(is_file($file)){
+    		// Delete file
+        	@unlink($file);
+    	}
 	}
 
-	// 2. UPLOAD FOLDER
+	// 3. UPLOAD FOLDER
 
 	// Specifies the folder to delete files
 	$folder = 'upload';
 
-	// Get all the files from folder
-	$files = glob($folder . '/*');
+	// Get all the python files from folder
+	$files = glob($folder . '/*.py');
 
 	// Adds the number of files
 	$count += count($files);
 
 	// Loop through each file
 	foreach($files as $file){
-	    // Exclude index file
-	    if(basename($file) != 'index.php'){
-	    	// Check if file is valid
-	    	if(is_file($file)){
-	    		// Delete file
-	        	unlink($file);
-	    	}
-	    }
+    	// Check if file is valid
+    	if(is_file($file)){
+    		// Delete file
+        	@unlink($file);
+    	}
 	}
 
-	// 3. END
+	// 4. CONCLUSION
 
-	// Prints the result log
-	print ($count - 2) . ' files deleted at ' . $date . ' UTC.';
+	// Prints the result log if files were deleted
+	if($count != 0){
+		print $count . ' files deleted at ' . $date . ' UTC.';
+	}
 ?>
