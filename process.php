@@ -7,6 +7,7 @@
 		http://gabrielsilva.tk/pyprotect
 
 		This is an open source software
+		Read LICENSE file before using it
 
 	*/
 
